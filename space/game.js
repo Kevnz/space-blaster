@@ -49,7 +49,10 @@ window.onload = function() {
 			.text("Score: 0")
 			.attr({x: Crafty.viewport.width - 300, y: Crafty.viewport.height - 50, w: 200, h:50})
 			.css({color: "#fff"});
-			
+		var pause = Crafty.e("2D, DOM, Text")
+				.text("Pause")
+				.attr({x: 150, y: Crafty.viewport.height - 50, w: 200, h:50})
+				.css({color: "#fff"});	
 		Crafty.background("url('images/bg.png')");
 
 		Crafty.c('RightControls', {
